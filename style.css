@@ -22,13 +22,42 @@ img{
     width: 100%;
     height: 50px;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.searchBar, .number, .productsComparison, .liked, .cabinate, .basket {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c7c2c2;
+}
+
+.searchBar, .number, .productsComparison, .liked, .cabinate{
+    border-right: 1px solid #c7c2c2;
+}
+
+.number, .productsComparison, .liked, .cabinate, .basket{
+    justify-content: center;
 }
 
 .searchBar{
     grid-column-start: 1;
-    grid-column-end: 6;
-    display: flex;
-    align-items: center;
-    border-right: 1px solid grey;
+    grid-column-end: 12;
+}
+
+.imgSearchPicture{
+    margin-left: 30px;
+}
+
+.searchInput{
+    margin-left: 10px;
+    border: 0px solid white;
+}
+
+.number{
+    grid-column-start: 12;
+    grid-column-end: 15;
+}
+
+.basket{
+    background: #ff8115;
 }
